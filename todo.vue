@@ -1,5 +1,5 @@
 <template>
-  <div id="todo-list">
+  <div id="app">
     <input v-model="todoText" placeholder="Input TODO"/>
     <button @click="add()" v-attr="disabled:!todoText">Add</button>
     <button @click="removeAll()">Remove all</button>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Todo',
+  name: 'app',
   data: {
     items: [],
     todoText: ''
